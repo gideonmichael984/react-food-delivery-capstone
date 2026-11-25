@@ -1,6 +1,12 @@
+import Hero from "../components/Hero"
+import Navbar from "../components/Navbar"
+
 const Home = () => {
   return (
-    <h1>Home</h1>
+    <>
+        <Navbar cartCount={2}/>
+        <Hero />
+    </>
   )
 }
 

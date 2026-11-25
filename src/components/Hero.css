@@ -1,0 +1,22 @@
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+}
+.btn-icon svg {
+  fill: currentColor;
+  transition: transform 0.4s ease; 
+}
+
+.is-open svg{
+    transform: rotate(90deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-icon svg {
+    transition: none;
+  }
+}

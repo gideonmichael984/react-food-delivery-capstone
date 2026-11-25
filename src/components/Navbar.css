@@ -1,0 +1,121 @@
+.navbar{
+  position: relative;
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.navbar-logo {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-extrabold);
+  color: var(--color-black);
+}
+.navbar-logo span {
+  color: var(--color-primary);
+}
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.navbar-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.navbar-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+.navbar-links a {
+  transition: color 0.3s ease;
+}
+.navbar-links a:hover {
+  color: var(--color-primary);
+  
+}
+.navbar-cart{
+    position: relative;
+}
+.navbar-cart span{
+    position: absolute;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: var(--fs-caption);
+    width: 16px;
+    height: 16px;
+    top: -6px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.navbar-menu{
+  display: contents;
+}
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+    background: none;
+    border: none; 
+    cursor: pointer;
+    font-size: var(--fs-h3);
+  }
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: var(--space-4);
+    gap: var(--space-2);
+    z-index: 1000;
+    
+  }
+  .navbar-menu.open {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+  .navbar-inner {
+    
+    height: auto;
+    padding: var(--space-4);
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: stretch;
+  }
+  .navbar-links li {
+    width: 100%;
+    text-align: left;
+  }
+   .navbar-links a{
+    display: block;
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid lightgray;
+  }
+  .navbar-actions {
+    flex-wrap: wrap;
+  }
+  .navbar-actions .btn {
+    flex: 1 1 100%;
+  }
+
+}
