@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="container hero-inner">
         <div className="hero-content">
           {/* badge */}
-          <span className="hero-badge">More than Faster</span>
+          <span className="hero-badge">More than Faster <span aria-hidden="true">🍓</span> </span>
 
           {/* h1 with "Food" in a span */}
           <h1>

@@ -8,6 +8,7 @@
   --color-info: #2370bb;
   --color-text: #040921;
   --color-primary-dark: #c9301f;
+  --color-primary-light: #fdeceb;
 
   /* Font Families */
   --font-main: "Open Sans", sans-serif;
@@ -44,6 +45,9 @@
 
   --radius-md: 16px;
   --radius-pill: 30px;
+
+  --shadow-card: 0 4px 20px rgba(4, 9, 33, 0.08);
+--shadow-card-raised: 0 16px 40px rgba(4, 9, 33, 0.15);
 
   --container-width: 1200px;
 }
@@ -127,4 +131,9 @@ img {
 .btn-outline:focus-visible {
   background: var(--color-primary);
   color: var(--color-white);
+}
+@media (max-width: 768px) {
+  .container {
+    padding: var(--space-2) var(--space-2);
+  }
 }
